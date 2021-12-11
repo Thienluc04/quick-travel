@@ -1,0 +1,297 @@
+html {
+  font-size: 62.5%;
+  font-family: "Merriweather", sans-serif, sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Againts";
+  src: url("//db.onlinewebfonts.com/t/cc6db7391cafec57dd3609244075edc1.eot");
+  src: url("//db.onlinewebfonts.com/t/cc6db7391cafec57dd3609244075edc1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cc6db7391cafec57dd3609244075edc1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cc6db7391cafec57dd3609244075edc1.woff") format("woff"), url("//db.onlinewebfonts.com/t/cc6db7391cafec57dd3609244075edc1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cc6db7391cafec57dd3609244075edc1.svg#Againts") format("svg");
+}
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  line-height: 0.8;
+}
+
+.heading-big {
+  font-size: 20rem;
+  font-family: "Againts";
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: "Montserrat";
+  color: #7ab55c;
+  font-size: 7rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400px;
+  text-align: center;
+}
+
+.desc-big {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Merriweather", sans-serif;
+}
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: 300;
+  max-height: 50px;
+  max-width: 300px;
+  color: #fff;
+  font-family: "Merriweather", sans-serif;
+  display: block;
+  margin: 0 auto;
+  transition: all linear 0.3s;
+  padding: 12px 0;
+}
+
+.button--blue {
+  background-color: #288dff;
+}
+
+h1 {
+  font-family: "Montserrat";
+}
+
+.header {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+.header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 46, 17, 0.5);
+  cursor: default;
+  z-index: 1;
+}
+.header-banner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.header-banner .slick-list {
+  height: 100%;
+  width: 100%;
+}
+.header-banner img {
+  height: 100vh;
+  width: 100%;
+}
+.header .container {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .container .menu {
+  height: 74px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .navbar {
+  display: flex;
+  gap: 0 36px;
+}
+.header .container .navbar-item .active {
+  color: #7ab55c;
+}
+.header .container .navbar-item-link {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: 0.3s linear all;
+}
+.header .container .navbar-item-link:hover {
+  color: #7ab55c;
+}
+
+.header__content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-top: 300px;
+  text-align: center;
+}
+.header__content .button {
+  margin-top: 50px;
+}
+.header__content .button:hover {
+  background-color: #7ab55c;
+}
+.header__content .button:focus {
+  color: #333;
+}
+
+.explore {
+  margin-top: -14px;
+  padding-top: 140px;
+  background: url(../img/explore-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 170px;
+}
+.explore .desc {
+  margin-bottom: 140px;
+}
+.explore .desc i {
+  font-weight: 500;
+}
+.explore__content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0 50px;
+}
+.explore-icon {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  transition: 0.3s linear all;
+}
+.explore-icon i {
+  font-size: 50px;
+}
+.explore-icon:hover {
+  border: 1px solid #7ab55c;
+  color: #7ab55c;
+}
+.explore-heading {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.explore-desc {
+  text-align: center;
+  color: #666666;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 32px;
+}
+
+.calllocation {
+  background: url(../img/caltoaction-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.calllocation .desc-big {
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+.calllocation-form {
+  max-width: 450px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.calllocation-form input {
+  padding: 15px 20px;
+  height: 100%;
+  flex: 1;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+}
+.calllocation-form button {
+  position: absolute;
+  font-size: 1.6rem;
+  height: 100%;
+  padding: 15px 35px;
+  display: block;
+  right: 0;
+  border-radius: 50px;
+  border: none;
+  background-color: #288dff;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s all linear;
+}
+.calllocation-form button:hover {
+  background-color: #7ab55c;
+}
+
+.thingtodo {
+  padding-top: 140px;
+}
+.thingtodo .desc {
+  margin-bottom: 100px;
+}
+.thingtodo .desc span {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+.header {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 46, 17, 0.5);
+    cursor: default;
+    z-index: 1;
+  }
+  &-banner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    .slick-list {
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .container {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .menu {
+      height: 74px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 0 36px;
+
+      &-item {
+        .active {
+          color: $primary-color;
+        }
+      }
+
+      &-item-link {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.4rem;
+        transition: 0.3s linear all;
+      }
+
+      &-item-link:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.header__content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-top: 300px;
+  text-align: center;
+
+  .button {
+    margin-top: 50px;
+  }
+
+  .button:hover {
+    background-color: $primary-color;
+  }
+
+  .button:focus {
+    color: #333;
+  }
+}

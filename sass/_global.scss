@@ -1,0 +1,84 @@
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  line-height: 0.8;
+}
+
+.heading-big {
+  font-size: 20rem;
+  font-family: $font-heading;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: $font-link;
+  color: $primary-color;
+  font-size: 7rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-family: $font-link;
+  font-size: 20px;
+  font-weight: 400px;
+  text-align: center;
+}
+
+.desc-big {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+  font-family: $font;
+}
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: 300;
+  max-height: 50px;
+  max-width: 300px;
+  color: #fff;
+  font-family: $font;
+  display: block;
+  margin: 0 auto;
+  transition: all linear 0.3s;
+  padding: 12px 0;
+}
+
+.button--blue {
+  background-color: $blue-color;
+}
+
+h1 {
+  font-family: "Montserrat";
+}

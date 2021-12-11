@@ -1,0 +1,56 @@
+.explore {
+  margin-top: -14px;
+  padding-top: 140px;
+  background: url(../img/explore-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 170px;
+  .desc {
+    margin-bottom: 140px;
+    i {
+      font-weight: 500;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0 50px;
+  }
+
+  &-icon {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    transition: 0.3s linear all;
+    i {
+      font-size: 50px;
+    }
+  }
+
+  &-icon:hover {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+
+  &-heading {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-desc {
+    text-align: center;
+    color: #666666;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 32px;
+  }
+}
